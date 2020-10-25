@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
+import HomePage from './components/HomePage/HomePage';
+import PIU from './components/ProjectPage/PIU';
+import HVSideBoard from './components/ProjectPage/HVSideBoard';
+import SmallerBoards from './components/ProjectPage/SmallBoards';
+import ACB from './components/ProjectPage/ACB';
+                
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <div className="app">
+          <Route exact path="/"component={HomePage}/>
+          <Route path="/piu" component={PIU} />
+          <Route path="/acb" component={ACB} />
+          <Route path="/hvsideboard" component={HVSideBoard} />
+          <Route path="/smallboards" component={SmallerBoards}/>
+        </div>
+      </Router>
   );
 }
 

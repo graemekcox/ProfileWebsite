@@ -1,0 +1,82 @@
+.projects-container{
+    width:1100px;
+    height: 1500px;
+    margin-top:0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns:350px 350px 350px;
+    grid-template-columns:350px 350px 350px;
+    -ms-grid-rows:350px 350px 350px 350px;
+    grid-template-rows:350px 350px 350px 350px;
+}.projects-container > *:nth-child(1){
+    -ms-grid-row:1;
+    -ms-grid-column:1;
+}.projects-container > *:nth-child(2){
+    -ms-grid-row:1;
+    -ms-grid-column:2;
+}.projects-container > *:nth-child(3){
+    -ms-grid-row:1;
+    -ms-grid-column:3;
+}.projects-container > *:nth-child(4){
+    -ms-grid-row:2;
+    -ms-grid-column:1;
+}.projects-container > *:nth-child(5){
+    -ms-grid-row:2;
+    -ms-grid-column:2;
+}.projects-container > *:nth-child(6){
+    -ms-grid-row:2;
+    -ms-grid-column:3;
+}.projects-container > *:nth-child(7){
+    -ms-grid-row:3;
+    -ms-grid-column:1;
+}.projects-container > *:nth-child(8){
+    -ms-grid-row:3;
+    -ms-grid-column:2;
+}.projects-container > *:nth-child(9){
+    -ms-grid-row:3;
+    -ms-grid-column:3;
+}.projects-container > *:nth-child(10){
+    -ms-grid-row:4;
+    -ms-grid-column:1;
+}.projects-container > *:nth-child(11){
+    -ms-grid-row:4;
+    -ms-grid-column:2;
+}.projects-container > *:nth-child(12){
+    -ms-grid-row:4;
+    -ms-grid-column:3;
+}
+
+    .projects-project-link-container{
+        position:relative;
+        margin: 0 10px 0 0px;
+        width:350px;
+        height:330px;
+        padding-top:21px;
+    }
+
+
+    @media only screen and (max-width: 1100px) {
+        .projects-container{
+            width:100%;
+            max-width: 1100px;
+            margin:0px auto;
+            height:auto;
+            display: grid;
+            grid-template-columns:50vw 50vw;
+            grid-template-rows:50vw 50vw;
+            /* border:1px solid red; */
+        }
+        
+            .projects-project-link-container{
+                position:relative;
+                flex: 1;
+                /* margin: auto; */
+                margin: 5vw;
+                width:50vw;
+                height:50vw;
+                max-width:50vw;
+                max-height:50vw;
+                padding-top:1vw;
+                /* border:1px solid green; */
+            }
+    }

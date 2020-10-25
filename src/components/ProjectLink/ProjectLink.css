@@ -1,0 +1,115 @@
+.project-link-link{
+    text-decoration: none;
+}
+
+.project-link-container{
+    flex: 1;
+    width:320px;
+    height:320px;
+    margin:auto;
+    /* border:1px solid blue; */
+    box-shadow: 2px 2px 2px #bbb;
+    background: #444;  
+    
+}
+.project-link-container:hover{
+    cursor: pointer;
+    height:325px;
+    width:325px;
+    transition: .5s;
+}
+
+    .project-thumbnail{
+        object-fit: cover;
+        width: 100%;
+        height:100%;
+        opacity: .5;
+        transition: .4s ease all;
+        z-index:-1;
+    }
+    .project-link-container:hover .project-thumbnail{
+        opacity: 1;
+        box-shadow: 3px 3px 5px #777;
+        transition: .3s ease all;
+        
+        z-index:2;
+
+    }
+
+    .project-name{
+        position: relative;
+        width:100%;
+        height:100%;
+        padding-top: 80px;
+        color:rgb(237, 237, 237);
+        bottom:300px;
+        font-size:30px;
+        text-align: center;
+        transition: .3s ease all;
+        text-decoration: none;
+    }
+    .project-link-container:hover .project-name{
+        opacity: 0;
+        transition: .6s ease all;
+    }
+
+
+    @media only screen and (max-width: 900px) {
+
+        .project-link-link{
+            text-decoration: none;
+        }
+        
+        .project-link-container{
+            flex: 1;
+            width:45vw;
+            height:45vw;
+            max-width:45w;
+            max-height:45vw;
+            margin:auto;
+            /* border:1px solid blue; */
+            box-shadow: 2px 2px 2px #bbb;
+            background: #444;  
+            
+        }
+        .project-link-container:hover{
+            cursor: pointer;
+            width:45vw;
+            height:45vw;
+            max-width:45w;
+            max-height:45vw;
+        }
+        
+            .project-thumbnail{
+                object-fit: cover;
+                width: 100%;
+                height:100%;
+                opacity: .5;
+                transition: .4s ease all;
+                z-index:-1;
+            }
+            .project-link-container:hover .project-thumbnail{
+                opacity: 1;
+                box-shadow: 3px 3px 5px #777;
+                transition: .3s ease all;
+                z-index:2;
+        
+            }
+        
+            .project-name{
+                position: relative;
+                width:100%;
+                height:100%;
+                padding-top: 12vw;
+                color:rgb(237, 237, 237);
+                bottom:36vw;
+                font-size:4vw;
+                text-align: center;
+                transition: .3s ease all;
+                text-decoration: none;
+            }
+            .project-link-container:hover .project-name{
+                opacity: 0;
+                transition: .6s ease all;
+            }
+    }
