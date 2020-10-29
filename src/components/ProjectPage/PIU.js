@@ -33,6 +33,13 @@ export class PIU extends Component {
                 and some additional sensors used for torque vectoring. The board houses safety circuitry to disable the tractive system in the case of 
                 sensor failure. An Atmel32m1 8-bit microcontroller is used to process all information, before sending it the vehicle's VCU (Vehicle Control Unit)
                 CAN (Controller Area Network) bus. 
+                The safety circuity consists of multiple sensor plausibility checks which can be used to disable the Tractive System. 
+                Voltage regulation circuits are used to provide stable power to the on-board microcontroller, as well as the other active components.
+
+                The board was designed to be easily soldered using our own equipment.
+                The microcontroller was programmed in 'C', with 
+                some additional drivers (such as CAN) developed as well.
+
                 "
            />
         )

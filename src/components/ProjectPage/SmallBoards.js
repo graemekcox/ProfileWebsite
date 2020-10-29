@@ -42,7 +42,19 @@ export class SmallerBoards extends Component {
                 {image: trace_ams,
                 decsription: "Trace view of AMS Cell Board tester"},
                 ]}
-            description="The RPI GPIO Board"
+            description="
+                Developed a 1-channel CAN shield to interface with a RaspberryPi.
+                Through-hole components were initially used to more easily assemble and test the PCB. 
+                These components were later switched to SMD footprints. All components were powered through the GPIO of hte RaspberryPi.
+                
+                Helped develop a Battery Management System (BMS) Cell board test fixture. The purpose of the test fixture is to help 
+                verify that individual cell boards are able to properly balace and monitor Lithium Ion cells.
+                Each cell board is programed to run a startup sequence which will toggle the 
+                A push-button switch is used to start the test, and the red LED will describe the status of the board. The 
+                LED will toggle once if the board is funtioning properly, and 3 times if it has failed. This PCB was developed
+                to reduce the time needed to debug issues in within the accumulator once all cells were connected.
+                More detail found at http://liionbms.com/php/bms_cellboard_test_fixture.php
+                "
            />
         )
     }
