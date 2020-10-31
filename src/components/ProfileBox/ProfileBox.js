@@ -12,14 +12,15 @@ export class ProfileBox extends Component {
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                 <div className="profile-box-name-container">
                     <h1 className="profile-box-name">Graeme Cox</h1>
-                    
                     {window.innerWidth > 1100 ?
                     <div>
-                    <a className="linkedin-link-container" href="https://www.linkedin.com/in/graemekcox/" target="_blank" rel="noopener noreferrer">
-
-                        <i class="fa fa-linkedin" style={{fontSize:"45px",color:"white"}}></i>
-                    </a>
-                    <a className="resume-tag"href={resume} target="_blank" rel="noopener noreferrer">resume</a>
+                        <a className="linkedin-link-container" href="https://www.linkedin.com/in/graemekcox/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-linkedin" style={{fontSize:"45px",color:"white"}}></i>
+                        </a>
+                        <a className="github-link-container" href="https://github.com/graemekcox" target="_blank" rel="noopener noreferrer">
+                            <i class="fa fa-github" style={{fontSize:"45px",color:"black"}}></i>
+                        </a>
+                        <a className="resume-tag"href={resume} target="_blank" rel="noopener noreferrer">resume</a>
                     </div>
                     :<div />
                     }

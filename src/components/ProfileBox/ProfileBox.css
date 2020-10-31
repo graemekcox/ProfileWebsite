@@ -1,29 +1,32 @@
 .profile-box-container{
     /* border:1px solid blue; */
-    width:100%;
-    height:170px;
-    margin-top:50px;
+    /* width:100%; */
+    width: 1000px;
+    height:250px;
+    /* margin-top:50px; */
+    margin: 0px auto;
     z-index:10;}
 
     .profile-box-name-container{
         /* border: 1px solid red;} */
-        width: 550px;
-        height:90px;
+        width: 900px;
+        height:130px;
         margin:auto;
         border-bottom: 1px solid #ddd;}
         
         .profile-box-name{
             font-size:70px;
-            width:340px;
+            width:550px;
             float:left;
             /* border:1px solid green; */
             font-family: 'Rajdhani', sans-serif;}
 
     .profile-box-school-container{
         /* border:1px solid blue; */
-        width:550px;
-        height:50px;
-        margin:15px auto 0 auto;
+        width: 250px;
+        height:70px;
+        float: right;
+        margin:10px auto 10px auto;
         padding:auto;}
 
         .profile-box-school{
@@ -42,11 +45,23 @@
             float:left;
             transition: .5s;
         }
+        .github-link-container{
+            background: white;
+            padding:3px 6px;
+            margin-top:20px;
+            margin-left:40px;
+            border-radius: 5px;
+            float:left;
+            transition: .5s;
+        }
         .linkedin-link-container:hover{
             box-shadow: 1px 1px 5px rgb(130, 130, 130);
             transition: .5s;
         }
-
+        .github-link-container:hover{
+            box-shadow: 1px 1px 5px rgb(130, 130, 130);
+            transition: .5s;
+        }
         .resume-tag{
             border:2px solid rgb(40, 142, 196);
             margin-left:40px;
@@ -67,15 +82,20 @@
             box-shadow: 1px 1px 8px rgb(130, 130, 130);
         }
 
-
         .home-link-container{
-            width:780px;
+            width:100px;
             height:100px;
             overflow: hidden;
             /* border:1px solid blue; */
-            margin: auto;
-            position: relative;
-            top:-70px;
+            /* margin: auto; */
+            /* text-align: center; */
+            /* float: left; */
+            /* position: relative; */
+            position: absolute;
+            /* top:-70px; */
+            /* top: 150px; */
+            top: 70px;
+            /* right: 20px; */
             z-index: 20;
 
         }
